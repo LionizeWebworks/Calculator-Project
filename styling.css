@@ -14,13 +14,37 @@
 .screen {
     display: flex;
     background-color: white;
+    border-bottom: 3px solid black;
     height: 95px;
     width: 400px;
 }
 
+.math {
+    display: grid;
+    background-color: rgb(111, 202, 202);
+    place-items: center;
+    font-size:xx-large;
+    }
+
+    .math:hover {
+        background-color: paleturquoise
+    }
+
+    .number {
+        display: grid;
+        place-items: center;
+        background-color:pink;
+        border-right: 1px solid black;
+        font-size:xx-large;
+        }
+
+        .number:hover {
+            background-color: rgb(248, 214, 219)
+        }
+
 .row-1 {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 50% 25% 25%;
     height: 95px;
     width: 400px;
     border-bottom: 2px solid black;
@@ -28,42 +52,34 @@
 
 .row-2 {
     display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
     height: 95px;
     width: 400px;
     border-bottom: 2px solid black;
 }
 .row-3 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
     height: 95px;
     width: 400px;
     border-bottom: 2px solid black;
 }
 .row-4 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
     height: 95px;
     width: 400px;
     border-bottom: 2px solid black;
 }
 .row-5 {
-    display: flex;
+    display: grid;
     height: 95px;
     width: 400px;
 }
 
 .row-5 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 75% 25%;
     height: 95px;
     width: 400px;
-}
-
-.math {
-background-color: rgb(111, 202, 202);
-}
-
-.math:hover {
-    background-color: paleturquoise
-}
-
-.number {
-
 }
