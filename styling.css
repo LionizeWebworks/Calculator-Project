@@ -59,18 +59,21 @@
     height: 95px;
     width: 400px;
 }
+
 .row-3 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 95px;
     width: 400px;
 }
+
 .row-4 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 95px;
     width: 400px;
 }
+
 .row-5 {
     display: grid;
     height: 95px;
