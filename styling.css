@@ -13,6 +13,10 @@
 
 .screen {
     display: flex;
+    justify-content: right;
+    align-items:flex-end;
+    font-size:50px;
+    font-family: monospace;
     background-color: white;
     border-bottom: 3px solid black;
     height: 95px;
@@ -33,8 +37,8 @@
     .number {
         display: grid;
         place-items: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
         background-color:pink;
-        border-right: 1px solid black;
         font-size:xx-large;
         }
 
@@ -47,7 +51,6 @@
     grid-template-columns: 50% 25% 25%;
     height: 95px;
     width: 400px;
-    border-bottom: 2px solid black;
 }
 
 .row-2 {
@@ -55,21 +58,18 @@
     grid-template-columns: 25% 25% 25% 25%;
     height: 95px;
     width: 400px;
-    border-bottom: 2px solid black;
 }
 .row-3 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 95px;
     width: 400px;
-    border-bottom: 2px solid black;
 }
 .row-4 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 95px;
     width: 400px;
-    border-bottom: 2px solid black;
 }
 .row-5 {
     display: grid;
