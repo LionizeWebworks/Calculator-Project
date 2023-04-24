@@ -1,88 +1,105 @@
 
-.calculator {
-    display: flex;
-    flex-direction: column;
-    border-left: 3px solid black;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    border-right: 3px solid black;
-    background-color: pink;
-    height: 550px;
-    width: 400px;
-}
-
-.screen {
-    display: flex;
-    justify-content: right;
-    align-items:flex-end;
-    font-size:50px;
-    font-family: monospace;
-    background-color: white;
-    border-bottom: 3px solid black;
-    height: 95px;
-    width: 400px;
-}
-
-.math {
-    display: grid;
-    background-color: rgb(111, 202, 202);
-    place-items: center;
-    font-size:xx-large;
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        border: 5px inset black;
+        background-color: white;
+        height: 550px;
+        width: 400px;
     }
 
-    .math:hover {
-        background-color: paleturquoise
+    .screen {
+        display: flex;
+        justify-content: right;
+        align-items:flex-end;
+        font-size:50px;
+        font-family: monospace;
+        background-color: white;
+        height: 95px;
+        width: 400px;
+        font-family: 'Orbitron', sans-serif;
     }
 
-    .number {
+    @keyframes flash {
+        0% {
+            opacity: 1;
+        }
+        25% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+
+    .screen {
+        animation: flash 1.25s infinite;
+    }
+
+    .math {
         display: grid;
+        background-color: rgb(111, 202, 202);
         place-items: center;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        background-color:pink;
         font-size:xx-large;
         }
 
-        .number:hover {
-            background-color: rgb(248, 214, 219)
+        .math:hover {
+            background-color: paleturquoise
         }
 
-.row-1 {
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
-    height: 95px;
-    width: 400px;
-}
+        .number {
+            display: grid;
+            place-items: center;
+            background-color:pink;
+            font-size:xx-large;
+            }
 
-.row-2 {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    height: 95px;
-    width: 400px;
-}
+            .number:hover {
+                background-color: rgb(248, 214, 219)
+            }
 
-.row-3 {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    height: 95px;
-    width: 400px;
-}
+        .number, .math {
+            font-family: 'Orbitron', sans-serif;
+        }
 
-.row-4 {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    height: 95px;
-    width: 400px;
-}
+    .row-1 {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        height: 95px;
+        width: 400px;
+        border-top: 3px inset black;
+    }
 
-.row-5 {
-    display: grid;
-    height: 95px;
-    width: 400px;
-}
+    .row-2 {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        height: 95px;
+        width: 400px;
+    }
 
-.row-5 {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    height: 95px;
-    width: 400px;
-}
+    .row-3 {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        height: 95px;
+        width: 400px;
+    }
+
+    .row-4 {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        height: 95px;
+        width: 400px;
+    }
+
+    .row-5 {
+        display: grid;
+        height: 95px;
+        width: 400px;
+    }
+
+    .row-5 {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        height: 95px;
+        width: 400px;
+    }

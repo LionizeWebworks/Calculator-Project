@@ -3,6 +3,7 @@ const input = document.querySelector(".screen");
 const array = [];
 let num1 = "";
 let num2 = "";
+let sumArray = [];
 let result = "";
 let operation = ""
 
@@ -12,6 +13,7 @@ clear.addEventListener("click", function () {
     num1 = "";
     num2 = "";
     result = "";
+    sumArray.length = 0;
     operation = ""
     input.innerHTML = '0';
 });
@@ -107,7 +109,8 @@ const clickNine = nine.addEventListener("click", function () {
 
 const plus = document.querySelector(".plus");
 plus.addEventListener("click", function () {
-    num1 = array.join("");
+    stringNum = array.join("");
+    num1 = parseInt(stringNum);
     array.length = 0;
     operation = "+";
     input.innerHTML = num1;
@@ -115,7 +118,8 @@ plus.addEventListener("click", function () {
 
 const minus = document.querySelector(".minus");
 minus.addEventListener("click", function () {
-    num1 = array.join("");
+    stringNum = array.join("");
+    num1 = parseInt(stringNum);
     array.length = 0;
     operation = "-";
     input.innerHTML = num1;
@@ -123,7 +127,8 @@ minus.addEventListener("click", function () {
 
 const times = document.querySelector(".times");
 times.addEventListener("click", function () {
-    num1 = array.join("");
+    stringNum = array.join("");
+    num1 = parseInt(stringNum);
     array.length = 0;
     operation = "*";
     input.innerHTML = num1;
@@ -131,29 +136,30 @@ times.addEventListener("click", function () {
 
 const divide = document.querySelector(".divide");
 divide.addEventListener("click", function () {
-    num1 = array.join("");
+    stringNum = array.join("");
+    num1 = parseInt(stringNum);
     array.length = 0;
     operation = "/";
     input.innerHTML = num1;
 });
 
 
-function addition(string1, string2) {
-    let addSum = parseInt(string1) + parseInt(string2);
+function addition(number1, string2) {
+    let addSum = number1 + parseInt(string2);
     return addSum;
 }
 
-function subtraction(string1, string2) {
-    let subSum = parseInt(string1) - parseInt(string2);
+function subtraction(number1, string2) {
+    let subSum = number1 - parseInt(string2);
     return subSum;
 }
 
-function multiplication(string1, string2) {
-    let multSum = parseInt(string1) * parseInt(string2);
+function multiplication(number1, string2) {
+    let multSum = number1 * parseInt(string2);
     return multSum;
 }
 
-function division(string1, string2) {
-    let divSum = parseInt(string1) / parseInt(string2);
+function division(number1, string2) {
+    let divSum = number1 / parseInt(string2);
     return divSum;
 }
